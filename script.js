@@ -24,8 +24,10 @@ submitButton.addEventListener("click", () => {
     }
   }
 
+  resultMessage.style.display = "block";
+  chiffreElement.textContent = correctCount;
+
   if (correctCount === Object.keys(correctAnswers).length) {
-    resultMessage.style.display = "block";
-    chiffreElement.textContent = "0";
+    resultMessage.textContent = "eh beh oui : 0";
   }
 });
